@@ -1,0 +1,257 @@
+body {
+    background-color: #181818;
+    margin: 0px;
+}
+#app {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 7vh auto 7vh;
+    grid-template-columns: none;
+    grid-template-areas: 'Header' 'Content' 'Footer';
+}
+.Header {
+    grid-area: Header;
+    background-color: #202020;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Logo {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-left: 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    user-select: none;
+    font-weight: bold;
+}
+.Menu {
+    margin-right: 10px;
+}
+.Menu-Item {
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-left: 10px;
+    user-select: none;
+    font-weight: bold;
+}
+.Menu-Item:hover {
+    color: purple;
+}
+.Menu-Item-Active {
+    color: purple;
+}
+.Menu-Icon {
+    margin-right: 3px;
+}
+.Content {
+    grid-area: Content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Footer {
+    grid-area: Footer;
+    background-color: #202020;
+}
+
+.Home {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 400px auto;
+}
+
+.Carousel {
+    display: grid;
+    grid-template-rows: auto 50px;
+}
+.Slide {
+    background-position: center;
+    background-size: cover;
+}
+.SlideButtons {
+    background-color: #202020;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    gap: 10px;
+}
+
+.SlideButton {
+    background-color: purple;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    user-select: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Qualities {
+    padding: 10px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.Quality {
+    background-color: purple;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    user-select: none;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Quality:hover {
+    transform: scale(1.02);
+}
+.FAQ {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+}
+.Questions {
+    padding: 10px;
+}
+.Question {
+    display: grid;
+    grid-template-rows: 30px min-content;
+    margin-bottom: 10px;
+}
+.Title {
+    background-color: purple;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    user-select: none;
+    font-weight: bold;
+}
+.Answer {
+    background-color: #202020;
+    padding: 10px;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    user-select: none;
+    font-weight: bold;
+}
+.Servers {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+
+}
+.Server {
+    display: grid;
+    grid-template-rows: 60px auto;
+    margin: 10px;
+}
+.Info {
+    background-color: purple;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    user-select: none;
+    font-weight: bold;
+}
+.AllServers {
+    background-color: #202020;
+    display: grid; 
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    padding: 10px;
+    gap: 10px;
+}
+.Srv {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: purple;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    user-select: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    background-image: url('https://steamuserimages-a.akamaihd.net/ugc/775102877221495168/D98515E1BB05D834E304F9549A735B20A08EF52C/');
+    border: solid purple 3px;
+    text-align: center;
+    background-blend-mode: multiply;
+    -webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+@-webkit-keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  @keyframes scale-in-center {
+    0% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+.Srv:hover {
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
+}
